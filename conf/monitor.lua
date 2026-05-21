@@ -5,9 +5,9 @@ hl.monitor({
   scale="1.00"
 })
 hl.monitor({
-  output="desc:GWD ARZOPA 2022110200001",
+  output="desc: GWD ARZOPA 0000001246796",
   mode="2560x1440@144.00",
-  position="auto-left",
+  position="auto-down",
   scale="1.25"
 })
 hl.monitor({

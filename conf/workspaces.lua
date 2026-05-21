@@ -1,3 +1,10 @@
-hl.workspace_rule({ workspace = "w[t1]", gaps_out = {top = 30, left = 90, right = 90, bottom = 30} })
-hl.workspace_rule({ workspace = "w[2-3]", gaps_out = {top = 30, left = 30, right = 30, bottom = 30} })
+hl.workspace_rule({ workspace = "w[t1]m[DP-3]", gaps_out = {top = 40, left = 460, right = 460, bottom = 30} })
+hl.workspace_rule({ workspace = "w[2-3]m[DP-3]", gaps_out = {top = 60, left = 220, right = 220, bottom = 60} })
+hl.workspace_rule({ workspace = "w[t1]m[HDMI-A-3]", gaps_out = {top = 40, left = 160, right = 160, bottom = 30} })
+hl.workspace_rule({ workspace = "w[2-3]m[HDMI-A-3]", gaps_out = {top = 60, left = 80, right = 80, bottom = 60} })
+
+hl.workspace_rule({ workspace = "w[t1]m[DP-2]", gaps_out = {top = 40, left = 460, right = 460, bottom = 30} })
+hl.workspace_rule({ workspace = "w[2-3]m[DP-2]", gaps_out = {top = 60, left = 220, right = 220, bottom = 60} })
+hl.workspace_rule({ workspace = "w[t1]m[HDMI-A-2]", gaps_out = {top = 40, left = 160, right = 160, bottom = 30} })
+hl.workspace_rule({ workspace = "w[2-3]m[HDMI-A-2]", gaps_out = {top = 60, left = 80, right = 80, bottom = 60} })
 -- hl.workspace_rule({ workspace = "w[1]", shadow = true })
