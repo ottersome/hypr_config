@@ -79,15 +79,17 @@ hl.bind(mainMod .. " + SHIFT".."+ Tab",   hl.dsp.focus({ workspace = "e-1" }), {
 hl.bind(mainMod.."+ SHIFT".."+ M", hl.dsp.exec_cmd("hyprshutdown"))
 
 
-hl.bind("XF86MonBrightnessUp", hl.dsp.exec_cmd("dms ipc call brightness increment 10 "))
-hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("dms ipc call brightness decrement 10 "))
-hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("dms ipc call audio increment 5"))
-hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("dms ipc call audio decrement 5"))
-hl.bind("XF86AudioMute", hl.dsp.exec_cmd("dms ipc call audio mute"))
+hl.bind("XF86MonBrightnessUp", hl.dsp.exec_cmd("dms ipc call brightness increment 10"), { repeating = true })
+hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("dms ipc call brightness decrement 10"), { repeating = true })
+hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("dms ipc call audio increment 2"), { repeating = true })
+hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("dms ipc call audio decrement 2"), { repeating = true })
+hl.bind("XF86AudioMute", hl.dsp.exec_cmd("dms ipc call audio mute"), { locked =  true })
 hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("playerctl play-pause # Audio play pause"))
 hl.bind("XF86AudioPause", hl.dsp.exec_cmd("dms ipc call mpris playPause # Audio pause"))
 hl.bind("XF86AudioNext", hl.dsp.exec_cmd("dms ipc call mpris next # Audio next"))
 hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("dms ipc call mpris previous # Audio previous"))
+hl.bind(mainMod.."+ equal", hl.dsp.exec_cmd("dms ipc call mpris next # Audio next"))
+hl.bind(mainMod.."+ minus", hl.dsp.exec_cmd("dms ipc call mpris previous # Audio previous"))
 hl.bind("XF86AudioMicMute", hl.dsp.exec_cmd("pactl set-source-mute @DEFAULT_SOURCE@ toggle # Toggle microphone"))
 hl.bind("XF86TouchpadToggle", hl.dsp.exec_cmd(" ~/scripts/toggle_touchpad.sh"))
 
