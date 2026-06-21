@@ -1,15 +1,15 @@
 hl.config({
   decoration = {
-    rounding = 9,
+    rounding = 20,
     blur = {
       enabled = true,
-      size = 6,
-      passes = 2,
+      size = 3,
+      passes = 3,
       new_optimizations = on,
       ignore_opacity = true,
       xray = true,
       noise=0.1,
-      contrast=1,
+      contrast=0.8,
     },
     active_opacity = 1.0,
     fullscreen_opacity = 1.0,

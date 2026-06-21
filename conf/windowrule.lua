@@ -66,6 +66,12 @@ hl.window_rule({
   size={"(monitor_w*0.6)","(monitor_h*0.6)"},
   float=true
 })
+hl.window_rule({
+  match = {
+    initial_title="Calendar Reminders",
+  },
+  float=true
+})
 -- hl.windowrule({float on, center on, size 900 600, match:title floatty
 -- hl.windowrule({float on, match:class nm-connection-editor
 
@@ -80,19 +86,19 @@ hl.window_rule({
   match = {
     title="^(zsh)$",
   },
-  opacity="0.85 override 0.85 override",
+  opacity="0.80 override 0.80 override",
 })
 hl.window_rule({
   match = {
     title="^(tmux)$",
   },
-  opacity="0.85 override 0.85 override",
+  opacity="0.80 override 0.80 override",
 })
 hl.window_rule({
   match = {
     class="com.mitchellh.ghostty",
   },
-  opacity="0.85 override 0.85 override",
+  opacity="0.80 override 0.80 override",
 })
 
 -- Browser Picture in Picture
