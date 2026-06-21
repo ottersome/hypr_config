@@ -47,6 +47,7 @@ hl.bind(mainMod.."+ bracketleft", hl.dsp.layout("move -col"))
 hl.bind(mainMod.."+ bracketright", hl.dsp.layout("move +col"))
 hl.bind(mainMod.."+ SHIFT".."+ bracketleft",  hl.dsp.layout("swapcol l"))
 hl.bind(mainMod.."+ SHIFT".."+ bracketright", hl.dsp.layout("swapcol r"))
+hl.bind(mainMod.."+ S", hl.dsp.layout("fit toend"))
 
 hl.bind("SUPER + F10", hl.dsp.pass({ window = "class:^(com\\.obsproject\\.Studio)$"}))
 hl.bind("SUPER + F9", hl.dsp.pass({ window = "class:^(com\\.obsproject\\.Studio)$"}))
