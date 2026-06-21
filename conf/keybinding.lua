@@ -65,7 +65,7 @@ hl.bind(mainMod.."+ V", hl.dsp.exec_cmd("cliphist list | wofi --dmenu | cliphist
 hl.bind(mainMod.."+ s", hl.dsp.exec_cmd("rofi -modi \"clipboard:greenclip print\" -show clipboard"))
 hl.bind(mainMod.."+ ALT".."+ G", hl.dsp.exec_cmd("$HYPRSCRIPTS/gamemode.sh # Toggle game mode"))
 
-hl.bind(mainMod.."+ a", hl.dsp.exec_cmd(" wayscriber --active"))
+hl.bind(mainMod.."+ SHIFT".."+ a", hl.dsp.exec_cmd("wayscriber --active"))
 
 
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]
