@@ -10,7 +10,7 @@ hl.bind(mainMod.."+ SHIFT" .. "+ Q", hl.dsp.window.close()) -- Kill active windo
 hl.bind(mainMod.."+ F", hl.dsp.window.fullscreen({mode = "fullscreen", action="toggle"}))
 hl.bind(mainMod.."+ D", hl.dsp.exec_cmd("rofi -show drun -show-icons")) -- Set active window to fullscreen
 hl.bind(mainMod.."+ R", hl.dsp.exec_cmd("rofi -show file-browser-extended -file-browser-depth 4 -file-browser-dir ~/ResearchPapers -file-browser-cmd sioyek -theme-str \"window {width: 50%;}\""))
-hl.bind(mainMod.."+ G", hl.dsp.exec_cmd("rofi -show file-browser-extended -file-browser-depth 3 -file-browser-dir ~/books/Literature -file-browser-cmd sioyek -theme-str \"window {width: 50%;}\""))
+hl.bind(mainMod.."+ G", hl.dsp.exec_cmd("rofi -how file-browser-extended -file-browser-depth 3 -file-browser-dir ~/books/Literature -file-browser-cmd sioyek -theme-str \"window {width: 50%;}\""))
 hl.bind(mainMod.."+ T", hl.dsp.exec_cmd("rofi -show file-browser-extended -file-browser-depth 3 -file-browser-dir ~/books/Academic -file-browser-cmd sioyek -theme-str \"window {width: 50%;}\""))
 hl.bind(mainMod.."+ SHIFT".."+ E", hl.dsp.exec_cmd("rofi -show emoji \"window {width: 50%;}\""))
 
