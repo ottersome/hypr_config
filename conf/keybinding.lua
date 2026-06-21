@@ -62,7 +62,7 @@ hl.bind(mainMod.."+ i", hl.dsp.exec_cmd("/home/ottersome/scripts/proofread_gpt.s
 hl.bind(mainMod.."+ m", hl.dsp.exec_cmd("zsh '/home/ottersome/scripts/automatic_monitor_switching.sh'"))
 hl.bind(mainMod.."+ z", hl.dsp.exec_cmd("hyprshot --freeze --mode=region --raw --clipboard-only | swappy -f -"))
 hl.bind(mainMod.."+ V", hl.dsp.exec_cmd("cliphist list | wofi --dmenu | cliphist decode | wl-copy"))
-hl.bind(mainMod.."+ s", hl.dsp.exec_cmd("rofi -modi \"clipboard:greenclip print\" -show clipboard"))
+-- hl.bind(mainMod.."+ s", hl.dsp.exec_cmd("rofi -modi \"clipboard:greenclip print\" -show clipboard"))
 hl.bind(mainMod.."+ ALT".."+ G", hl.dsp.exec_cmd("$HYPRSCRIPTS/gamemode.sh # Toggle game mode"))
 
 hl.bind(mainMod.."+ SHIFT".."+ a", hl.dsp.exec_cmd("wayscriber --active"))
