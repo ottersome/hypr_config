@@ -104,9 +104,9 @@ hl.bind(mainMod.."+ grave", hl.dsp.exec_cmd(" ~/scripts/esc_caps_toggle.sh"))
 
 hl.bind(mainMod.."+ B", hl.dsp.exec_cmd("/home/ottersome/scripts/bluetooth_connect.sh"))
 
-hl.bind(mainMod.."+ F1", hl.dsp.exec_cmd(" hyprctl dispatch dpms toggle"))
-hl.bind(mainMod.."+ F2", hl.dsp.exec_cmd(" hyprctl dispatch dpms off HDMI-A-3"))
-hl.bind(mainMod.."+ F3", hl.dsp.exec_cmd(" hyprctl dispatch dpms on HDMI-A-3"))
+hl.bind(mainMod.."+ F1", hl.dsp.dpms({ action = 'toggle' }))
+hl.bind(mainMod.."+ F2", hl.dsp.dpms({ action = 'toggle', monitor="HDMI-A-3"}))
+-- hl.bind(mainMod.."+ F3", hl.dsp.exec_cmd("hyprctl dispatch dpms on HDMI-A-3"))
 
 hl.bind(mainMod.."+ Backslash", hl.dsp.exec_cmd("playerctl play-pause # Audio play pause"))
 -- hl.bind(mainMod.."+ SHIFT".."+ \\", hl.dsp.exec_cmd("pactl set-source-mute @DEFAULT_SOURCE@ toggle # Toggle microphone"))
