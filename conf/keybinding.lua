@@ -2,7 +2,8 @@ local mainMod = "SUPER"
 
 hl.bind(mainMod.."+ RETURN", hl.dsp.exec_cmd("ghostty"))
 hl.bind(mainMod.."+ SHIFT".."+ RETURN", hl.dsp.exec_cmd("ghostty --title='floatty'"))
-hl.bind(mainMod.."+ B", hl.dsp.exec_cmd("zen"))
+-- hl.bind(mainMod.."+ B", hl.dsp.exec_cmd("firefox"))
+hl.bind(mainMod.."+ X", hl.dsp.exec_cmd("thunar"))
 
 -- hl.bind(mainMod.."+ SHIFT" .. "+ Q", hl.dsp.exec_cmd("~/.config/hypr/scripts/killactive.sh")) -- Kill active window
 hl.bind(mainMod.."+ SHIFT" .. "+ Q", hl.dsp.window.close()) -- Kill active window
